@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
 
-class Feeling extends Component {
+class Supported extends Component {
   render() {
     return (
       <div className="App"></div>
-      <h3>how do you feel today?</h3>
-      <input type="number" name="quantity" min="1" max="5"></input>
+      <h3>anything you want us to know?</h3>
+      <input type="text"></input>
       <button>next</button>
     );
   }
 }
 
-export default Feeling;
+export default Supported;
