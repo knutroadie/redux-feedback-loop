@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
 
-class App extends Component {
+class Feeling extends Component {
   render() {
     return (
       <div className="App">
@@ -16,4 +16,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Feeling;
