@@ -50,7 +50,7 @@ const Submit = (state = [], action) => {
 const storeInstance = createStore(
     combineReducers({
         Feeling,
-        Understand,
+        Understanding,
         Supported,
         Comments,
         Submit
