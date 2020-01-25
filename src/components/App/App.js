@@ -36,8 +36,8 @@ class App extends Component {
         {/* <Understanding /> */}
         {/* <Supported /> */}
         {/* <Comments /> */}
-        <Review />
-        <ThankYou />
+        {/* <Review /> */}
+        {/* <ThankYou /> */}
       </div>
     );
   }
