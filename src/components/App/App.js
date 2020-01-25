@@ -32,10 +32,10 @@ class App extends Component {
             <Route path="/thankyou" component={ThankYou} />
           </div>
         </Router>
-        <Feeling />
-        <Understanding />
-        <Supported />
-        <Comments />
+        {/* <Feeling /> */}
+        {/* <Understanding /> */}
+        {/* <Supported /> */}
+        {/* <Comments /> */}
         <Review />
         <ThankYou />
       </div>
