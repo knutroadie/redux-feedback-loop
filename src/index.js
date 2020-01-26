@@ -40,7 +40,7 @@ const Comments = (state = '', action) => {
 }
 
 // Submit
-const Submit = (state = [], action) => {
+const Submit = (state = {}, action) => {
     if (action.type === 'SUBMIT') {
         return action.payload
     }

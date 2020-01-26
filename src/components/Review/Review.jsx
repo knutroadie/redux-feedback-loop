@@ -8,25 +8,21 @@ class Review extends Component {
 
     //state
     state = {
-        feedback: [
-            // feeling: 0,
-            // understanding: 0,
-            // supported: 0,
-            // comments: '',
-        ]
+        feedback: {}
     };
     // setState function
     makeFeedback = (event) => {
         console.log(this.state, this.props.reduxState);
         this.setState({
-            feedback: [
-                ...this.state.feedback,
+            feedback: {
+                ...this.state,
                 feeling: this.props.reduxState.Feeling,
-                understanding: this.props.reduxState.Understanding
-                supported: this.props.reduxState.Supported
-                comments: this.props.reduxState.Comments
-            ]
+                understanding: this.props.reduxState.Understanding,
+                supported: this.props.reduxState.Supported,
+                comments: this.props.reduxState.Comments,
+            }
         })
+    this.dispatchFeedback()        
     }
     // click listener
     dispatchFeedback = () => {
