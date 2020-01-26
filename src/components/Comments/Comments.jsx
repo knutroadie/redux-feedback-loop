@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
 import '../App/App.css';
 import { HashRouter as Router, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -32,7 +31,7 @@ class Comments extends Component {
                 <h3>anything you want us to know?</h3>
                 <input type="text" name="comments" value={this.state.comments} onChange={(event) => this.makeComments(event, 'comments')}></input>
                 <Router>
-                    <Link to="/review" onClick={this.dispatchComments}>next</Link>
+                    <Link to="/review" onClick={this.dispatchComments}><button>next</button></Link>
                 </Router>
             </>
         );

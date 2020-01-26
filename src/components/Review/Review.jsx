@@ -13,7 +13,6 @@ class Review extends Component {
             support: this.props.reduxState.Supported,
             comments: this.props.reduxState.Comments
         }
-        // event.preventDefault();
         console.log(`posting feedback`, feedback);
         axios.post('/feedback', feedback)
             .then(() => {
@@ -32,7 +31,7 @@ class Review extends Component {
                     <div>supported: {this.props.reduxState.Supported}</div>
                     <div>comments: {this.props.reduxState.Comments}</div>
                     <Router>
-                        <Link to="/thankyou" onClick={() => this.postFeedback()}>submit</Link>
+                        <Link to="/thankyou" onClick={() => this.postFeedback()}><button>submit</button></Link>
                     </Router>
                 </div>
             </>

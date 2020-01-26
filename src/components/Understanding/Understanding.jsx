@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
 import '../App/App.css';
 import { HashRouter as Router, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -32,7 +31,7 @@ class Understanding extends Component {
                     <h3>how well are you understanding the content?</h3>
                     <input type="number" name="quantity" min="1" max="5" value={this.state.understanding} onChange={(event) => this.makeUnderstanding(event, 'understandingNumber')}></input>
                     <Router>
-                        <Link to="/supported" onClick={this.dispatchUnderstanding}>next</Link>
+                        <Link to="/supported" onClick={this.dispatchUnderstanding}><button>next</button></Link>
                     </Router>
                 </div>
             </>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
 import '../App/App.css';
 import { HashRouter as Router, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -33,7 +32,7 @@ class Feeling extends Component {
                 <h3>how do you feel today?</h3>
                 <input type="number" name="quantity" min="1" max="5" value={this.state.feeling} onChange={(event) => this.makeFeeling(event, 'feelingNumber')}></input>
                 <Router>
-                    <Link to="/understanding" onClick={this.dispatchFeeling}>next</Link>
+                    <Link to="/understanding" onClick={this.dispatchFeeling}><button>next</button></Link>
                 </Router>
             </>
         );

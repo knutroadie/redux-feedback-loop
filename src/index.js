@@ -39,22 +39,12 @@ const Comments = (state = '', action) => {
     return state;
 }
 
-// Submit
-// const Submit = (state = {}, action) => {
-//     if (action.type === 'SUBMIT') {
-//         return action.payload
-//     }
-//     console.log('in submit reducer', state);
-//     return state;
-// }
-
 const storeInstance = createStore(
     combineReducers({
         Feeling,
         Understanding,
         Supported,
         Comments,
-        // Submit
     }),
     applyMiddleware(logger),
 )

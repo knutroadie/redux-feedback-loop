@@ -11,7 +11,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('build'));
 
 /** ---------- EXPRESS ROUTES ---------- **/
-// app.use('/api/feedback', require('/feedback'));
 app.post('/feedback', (req, res) => {
     console.log('in /feedback POST:', req.body);
     const query = `INSERT INTO "feedback" ( "feeling", "understanding", "support", "comments" ) VALUES ( $1, $2, $3, $4 );`;
