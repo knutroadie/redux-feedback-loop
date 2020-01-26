@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 5000;
 const router = express.Router();
+const pool = require( './modules/pool' );
 
 /** ---------- MIDDLEWARE ---------- **/
 app.use(bodyParser.json()); // needed for angular requests
@@ -10,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('build'));
 
 /** ---------- EXPRESS ROUTES ---------- **/
-// app.use('/api/feedback', require('/api/feedback'));
+// app.use('/api/feedback', require('/feedback'));
 app.post('/feedback', (req, res) => {
     console.log('in /feedback POST:', req.body);
     const query = `INSERT INTO "feedback" ( "feeling", "understanding", "support", "comments" ) VALUES ( $1, $2, $3, $4 );`;
