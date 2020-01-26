@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import axios from 'axios';
 import '../App/App.css';
-import { HashRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 class Supported extends Component {
@@ -11,7 +11,7 @@ class Supported extends Component {
         supportedNumber: 0
     }
     //input function
-    makeSupported = (event, supportedNumber) => {
+    makeSupported = (event) => {
         this.setState({
             supportedNumber: event.target.value
         })

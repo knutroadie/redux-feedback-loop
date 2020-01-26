@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import axios from 'axios';
 import '../App/App.css';
-import { HashRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 class Understanding extends Component {
@@ -11,7 +11,7 @@ class Understanding extends Component {
         understandingNumber: 0
     }
     //input function
-    makeUnderstanding = (event, understandingNumber) => {
+    makeUnderstanding = (event) => {
         this.setState({
             understandingNumber: event.target.value
         })

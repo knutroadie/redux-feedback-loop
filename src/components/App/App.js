@@ -13,8 +13,6 @@ import { connect } from 'react-redux';
 
 class App extends Component {
 
-  // componentdidmount
-
   render() {
     return (
       <div className="App">
@@ -32,12 +30,6 @@ class App extends Component {
             <Route path="/thankyou" component={ThankYou} />
           </div>
         </Router>
-        {/* <Feeling /> */}
-        {/* <Understanding /> */}
-        {/* <Supported /> */}
-        {/* <Comments /> */}
-        {/* <Review /> */}
-        {/* <ThankYou /> */}
       </div>
     );
   }

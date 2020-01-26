@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import axios from 'axios';
 import '../App/App.css';
-import { HashRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 class Comments extends Component {
@@ -11,7 +11,7 @@ class Comments extends Component {
         comments: ''
     }
     //input function
-    makeComments = (event, comments) => {
+    makeComments = (event) => {
         this.setState({
             comments: event.target.value
         })

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import axios from 'axios';
 import '../App/App.css';
-import { HashRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 
@@ -12,7 +12,7 @@ class Feeling extends Component {
         feelingNumber: 0
     }
     //input function
-    makeFeeling = (event, feelingNumber) => {
+    makeFeeling = (event) => {
         this.setState({
             feelingNumber: event.target.value
         })
